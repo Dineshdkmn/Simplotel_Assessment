@@ -1,0 +1,293 @@
+* #home {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background:linear-gradient(to right, rgb(254, 249, 189), rgb(254, 156, 199));
+}
+
+
+#home {
+    position: relative;
+}
+
+#lorem {
+    color: rgb(11, 11, 11);
+    width: 44%;
+    padding: 40px;
+    font-family: sans-serif;
+    position: absolute;
+    top: 7%;
+    left: 6%;
+    z-index: 40;
+}
+
+#lorem h1 {
+    margin-top : 8px;
+    font-size: 50px;
+    color: rgb(32, 31, 31);
+    letter-spacing: 2.5px;
+}
+
+
+#lorem p {
+    line-height: 25px;
+    width: 82%;
+    margin-top: 12%;
+    letter-spacing: 1px;
+    font-size: 17px;
+}
+
+#home_image {
+    height: 690px;
+    overflow: hidden;
+    object-fit: contain;
+}
+
+#image1 {
+    width: 50%;
+    height: 690px;
+    float : right;
+}
+
+#div {
+    height: 0px;
+    background: linear-gradient(to right, rgb(254, 249, 189), rgb(254, 156, 199));
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 5%;
+}
+
+/* For Medium Screen (For Tablet)*/
+@media all and (min-width: 481px) and (max-width:768px) {
+    #lorem {
+        padding: 20px;
+        width: 50%;
+    }
+
+    #lorem h1 {
+        font-size: 40px;
+    }
+
+    #lorem p {
+        width: 80%;
+        line-height: 22px;
+    }
+    .two img {
+        width: 150px;
+        height: 150px;
+    }
+  
+    .three img {
+        width: 200px;
+        height: 300px;
+    }
+  
+    .four {
+        width: 90%;
+        margin: 100px auto;
+    }
+  
+    .four p {
+        font-size: 24px;
+    }
+  }
+  
+
+/* For Small Screen (For Mobile Screen)*/
+@media all and (min-width: 320px) and (max-width:480px) {
+    #lorem {
+        padding: 20px;
+        width: 60%;
+    }
+
+    #lorem h1 {
+        font-size: 30px;
+    }
+
+    #lorem p {
+        width: 100%;
+        line-height: 18px;
+    }
+}
+
+/* Add this to your existing CSS file */
+.click-me-btn {
+    background-color: #fd7e7e; /* Pale red color */
+    color: #fff; /* Text color */
+    border: none;
+    padding: 10px 50px;
+    margin-top: 60px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.click-me-btn:hover {
+    background-color: #fd7e7e; /* Darker shade on hover */
+}
+
+.two {
+    margin-left: 50px;
+    padding-top: 80px;
+  }
+  
+  .two img {
+    height: 200px;
+    width: 200px;
+    max-width: 100%;
+  }
+  
+  .two div {
+    margin-top: 10px;
+  }
+  
+  .sec-2 {
+    background: linear-gradient(to right, rgb(254, 249, 189), rgb(254, 156, 199));
+    margin-top: 10px;
+  
+  }
+  
+  .three img {
+    height: 415px;
+    width: 250px;
+    padding-top: 100px;
+    margin-left: 10px;
+    max-width: 100%;
+  }
+  
+  .four {
+    height:250px;
+    width: 400px;
+    background-color: #f76f6f;
+    margin-top:150px;
+    margin-left: 10px;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  .four h6 {
+    margin-top: 10px;
+    font-size: 15px;
+    text-align:left;
+    padding-left:3%;
+    font-weight: normal;
+  }
+  
+  .four p {
+    margin-top: 20px;
+    font-weight: bolder;
+    font-size: 40px;
+    text-align: left;
+    padding-left: 3%;
+  }
+  
+  .four img {
+    margin-top:10px;
+    height: 15px;
+    width: 20px;
+    text-align: left;
+    padding-left:3%;
+  }
+  
+  span {
+    padding-left: 0px;
+  }
+
+
+  .sec-2 {
+    padding: 50px;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left:10px;
+}
+
+.two {
+    margin-left: 50px;
+    padding-top: 100px;
+  }
+  
+.two img {
+    width: 200px;
+    height : 160px;
+    margin-bottom: 2px; /* Space between images two and three */
+}
+
+.three img {
+    width: 200px;
+    height : 440px;
+    margin-left: 0px; /* Space between images two and three */
+}
+
+.four {
+    width: 30%; /* Adjust width as needed */
+    text-align: center;
+    margin-left : 0px;
+}
+
+.four img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Media Query for Menu Icon */
+@media screen and (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .menu.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: #333;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    .menu.active li {
+        margin: 10px 0;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .content p {
+        font-size: 18px; 
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    
+    nav ul li a {
+        font-size: 20px;
+    }
+  
+    .content p {
+        font-size: 20px;
+    }
+  
+    button {
+        height: 50px;
+        width: 200px; 
+    }
+  }
+
+  /* Add a gap between images two and three */
+@media all and (min-width: 320px) and (max-width: 480px) {
+    .two img {
+        margin-bottom: 2px; /* Reduce margin for smaller screens */
+    }
+}
